@@ -71,6 +71,7 @@ static __weak TORThread *_thread = nil;
     tor_main_configuration_set_command_line(cfg, argc, argv);
     tor_run_main(cfg);
     tor_main_configuration_free(cfg);
+    _thread = nil;
 }
 
 @end
